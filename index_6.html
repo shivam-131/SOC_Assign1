@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head><title>
+        Iframe assignment
+    </title>
+</head>
+<script>
+        functiom func()
+        {
+            var str= $("input").value;
+            document.getElementById("myiframe").src= str;
+        }
+    </script>
+<body>
+    <ul>
+    <li><a href="http://www.wikipedia.org" target="myiframe"> Wikipedia</a></li>
+    <li><a href="http://www.facebook.com" target="myiframe"> Facebook</a></li>
+    <li><a href="http://www.instagram.com" target="myiframe"> Instagram</a></li>
+    <iframe name="myiframe" width="30%" height="20%"></iframe><br><br>
+    SEARCH HERE<input type="text" id="search"><br>
+    <button onclick="func()"> GO</button> 
+</body>
+</html>
